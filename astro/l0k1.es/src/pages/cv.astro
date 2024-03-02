@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume - l0k1" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am a Systems Administration Professional with a strong determination to forge 
+    a career focused on cybersecurity. I am currently studying for the EJPTv2 certificate, 
+    which will be the first big step in my cybersecurity career.<br>
+    Alternatively, I have advanced scripting skills in languages such as Python and Bash, 
+    and knowledge in other programming languages such as JavaScript, Java and PHP.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Linux Systems Technician"
+      subtitle="From July 2023 at Kyndryl, Granada, Spain"
+    >
+      L1 Technician specialized in WebSphere and TomCat Application Servers.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Higher Education Internship"
+      subtitle="From March 2023 to June 2023 at Kyndryl, Granada, Spain"
+    >
+      Intership as L1 Technician specialized in WebSphere and TomCat Application Servers.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Degree in Computer Engineering"
+      subtitle="From 2023 at Universidad Española de Educación a Distancia (UNED), Granada, Spain"
+    />
+    <TimeLineElement
+      title="Degree in Administration of networked computer systems"
+      subtitle="From 2021 to 2023 at IES Zaidín Vergeles, Granada, Spain"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      Currently studying for EJPTv2. 
+      <!-- <a href="#" target="_blank"> Certification Name (with link)</a> -->
+    </li>
+    <!-- <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li> -->
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Languages</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <b>Spanish</b> - Native
+    </li>
+    <li>
+      <b>English</b> - Fluent
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Teamwork</li>
+    <li>Critical thinking</li>
+    <li>Problem Solving</li>
+    <li>Communication</li>
+    <li>Adaptability</li>
+    <li>Organization</li>
+    <li>Scripting</li>
+    <li>Linux</li>
+    <li>Windows</li>
+    <li>Docker</li>
+    <li>Cibersecurity</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+    <li>Java</li>
+  </ul>
+</BaseLayout>
