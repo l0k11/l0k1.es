@@ -1,9 +1,11 @@
 # build output
 */*/dist/
+*/dist/
 */.cache
 
 # dependencies
 */*/node_modules/
+*/node_modules/
 
 # logs
 */npm-debug.log*
@@ -24,5 +26,6 @@
 
 # Other
 */*/.vscode/
+*/.vscode/
 tests/
 apuntes.txt
