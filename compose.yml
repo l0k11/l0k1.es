@@ -7,3 +7,5 @@ services:
       - "80:80"
       - "443:443"
     tty: true
+    volumes:
+      - /etc/letsencrypt/archive/l0k1.es/:/etc/certs/
