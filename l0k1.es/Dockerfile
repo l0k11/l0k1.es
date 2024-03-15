@@ -25,4 +25,4 @@ done'
 # Build the production app 
 RUN bash -c 'pnpm run build'
 
-CMD service nginx start && bash
+CMD service nginx start; bash

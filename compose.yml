@@ -8,4 +8,22 @@ services:
       - "443:443"
     tty: true
     volumes:
-      - /etc/letsencrypt/archive/l0k1.es/:/etc/certs/
+      - /etc/letsencrypt/archive/l0k1.es/:/etc/certs/l0k1.es/
+      - /etc/letsencrypt/archive/l0k1.es-0001/:/etc/certs/wildcard/
+  
+  # mail.l0k1.es:
+  #   image: analogic/poste.io # Ultra heavy image
+  #   container_name: mail.l0k1.es
+  #   ports:
+  #     - "25:25"
+  #     - "110:110"
+  #     - "143:143"
+  #     - "465:465"
+  #     - "587:587"
+  #     - "993:993"
+  #     - "995:995"
+  #     - "4190:4190"
+  #   environment:
+  #     - TZ=Europe/Madrid
+  #   volumes:
+  #     - ./mail.l0k1.es/data:/data
